@@ -15,41 +15,50 @@
 				<span>1</span>First Name & Address
 			</div>
 			<div class="form-wrapper">
-				<label>Full Name<input type="text" class="fullName" placeholder="Your Full Name"
+				<div class="error fullName-error"></div>
+				<label>Full Name<input type="text" class="fullName field" placeholder="Your Full Name"
 				</label>
-				<label>Address<input type="text" class="address" placeholder="Address"
+				<div class="error address-error"></div>
+				<label>Address<input type="text" class="address field" placeholder="Address"
 				</label>
 			</div>
 			<div class="section">
 				<span>2</span> Contact Info
 			</div>
 			<div class="form-wrapper">
-				<label>Email<input type="text" class="email" placeholder="Email"
+			<div class="error email-error"></div>
+				<label>Email<input type="text" class="email field" placeholder="Email"
 				</label>
-				<label>Phone Number<input type="number" class="phone" placeholder="Phone Number"
+				<div class="error phone-error"></div>
+				<label>Phone Number<input type="text" class="phone field" placeholder="Phone Number i.e. XXX-XXX-XXXX"
 				</label>
 			</div>
 			<div class="section">
 				<span>3</span> Password
 			</div>
 			<div class="form-wrapper">
-				<label>Password<input type="password" class="error pass-error" placeholder="Password must be 6 characters"
+				<div class="error password-error"></div>
+				<label>Password<input type="password" class="password field" placeholder="Password must be 6 characters"
 				</label>
-				<label>Password Confirmation<input type="password" class="password2" placeholder="Confirm Password"
+				<div class="error confirm-error"></div>
+				<label>Password Confirmation<input type="password field" class="confirm" placeholder="Confirm Password"
 				</label>
 			</div>
 			<div class="section">
 				<span>4</span> Skills
 			</div>
 			<div class="form-wrapper">
-				<label>My Tech Skills<input type="text" class="mySkills" placeholder="Enter Your Skills"
+				<div class="error mySkills-error"></div>
+				<label>My Tech Skills<input type="text" class="mySkills field" placeholder="Enter Your Skills"
 				</label>
-				<label>Years of Experience<input type="number" class="years" placeholder="Years of Experience"
+				<div class="error years-error"></div>
+				<label>Years of Experience<input type="number" class="years field" placeholder="Years of Experience"
 				</label>
 			</div>
 			<div class="form-wrapper">
 				<input type="submit" class="submit" value="Get me a job!">
-				<input type="checkbox" class="checkbox"<span>Agree to the Terms</span></input>
+				<div class="error checkbox-error"></div>
+					<input type="checkbox" class="checkbox field"><span>Agree To Terms</span></input>
 			</div>
 	</form>
 </body>

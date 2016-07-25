@@ -6,11 +6,21 @@ $(document).ready(function(){
 		var password = $('.password').val();
 			if(password.length < 6){
 				$('.password').focus();
-				$('.pass-error').html('Your passowd must be at least 6 characters');
+				$('.password-error').html('Your password must be at least 6 characters');
 		}
-	});
-	$('.sign-up-form').submit(function(){
-		var fieldValidate = $('input').val();
-
+		var email = $('.email').val();
+		console.log(email);
+		if(email.indexOf('@') == -1){
+			$('.email-error').html('Please enter a valid email address');
+		}
+		var password = $('.password').val();
+		var confirm = $('.confirm').val();
+		if(password !== confirm){
+			$('.confirm-error').html('Passwords must match');
+			}
+		var numCheck = $('.phone').val();
+		if((numCheck[3] != "-") && (numCheck[7] != "-")){
+			$('.phone-error').html('Use this format XXX-XXX-XXXX');
+		}
 	});
 });
