@@ -1,0 +1,52 @@
+body{
+	max-width: 500px;
+	padding: 30px;
+	margin: auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	border-radius: 6px;
+}
+h1{
+	background-color: #2A88AD;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	padding: 20px 30px 15px;
+	font-size: 30px;
+	border-radius: 10px 10px 0px 0px;
+	font-family: 'Indie Flower', cursive;	
+}
+span{
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+}
+.section{
+	font-size: 24px;
+	color: #2A88AD;
+	margin: 10px 0px;
+}
+.section span{
+	margin-left: -50px;
+	position: absolute;
+	background-color: #2A88AD;
+	color: white;
+	border-radius: 50%;
+	padding: 5px 10px;
+	border: 5px solid white;
+}
+.form-wrapper{
+	padding: 10px;
+	background-color: #F8F8F8;
+
+}
+.form-wrapper input{
+	width: 90%;
+	margin: 10px auto 5px;
+	border-radius: 6px;
+	border: 2px solid white;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.8);
+	display: block;
+}
+.error{
+	color: red;
+}
